@@ -1,0 +1,258 @@
+		body { 
+		color: #999999;
+		font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+		font-size: 11px;
+		background-image: url('../images/bg.jpg');
+		background-repeat: repeat-x;
+		}
+
+		#container{
+			width: 1000px;
+		    background-color: white;	
+			margin:0 auto;
+			align: center;
+			
+		}
+		
+		#header{			
+			margin:0 auto;			
+			padding: 20px 0px 0px 0px;
+			height: 60px;
+			background-color: #66CC00;
+			background-image: url('../images/bg.jpg');
+			background-repeat: repeat-x;
+			display: block;
+		}
+		
+		#logoHeader{
+			background-image: url('../images/logoHeader.png');
+			background-repeat: no-repeat;
+			width:	200px;
+			height: 40px;
+			float: left;
+			margin-top: 20px;
+			
+		}
+		
+	
+		#navigationBar{
+			width: 800px;
+			height: 40px;
+			float: left;
+			margin-top: 20px;
+		}
+		
+		#navigationMenu{
+			width: 250px;
+			height: 39px;
+			float: right;
+		}
+		
+		#navigationMenu li{
+			float: left;
+			margin-top: 12px;
+			
+		}
+		
+		#navigationMenu ul a{
+			text-decoration: none;
+			margin-left: 10px;
+			font-weight: bold;
+			color: #FFFFFF;
+		}
+		
+		#navigationMenu ul a:hover{
+			text-decoration: underline;
+		}
+		
+		
+		#searchHeader{
+			background-color: #52a300;
+			width: 580px;
+			height: 39px;
+			border-left:1px solid #336600;
+			border-right:1px solid #336600;
+			border-top:1px solid #336600;
+			
+			padding-right: 18px;
+			float: left;
+		}
+		
+		input.inputSearchHeader{
+			width: 300px;
+			height: 22px;
+			color: #333333;
+			border-width:0;
+			float: right;
+			margin-top: 8px;
+		}
+		
+		#buttonSearchHeader{
+			height: 22px;
+			width: 20px;
+			background-image: url('../images/searchButton.png');
+			background-position:center;
+			float: right;
+			border-left: solid 1px #E3E3E3;
+			margin-top: 8px;
+		}
+		
+		#facebookLogin{
+			margin-left: 15px;
+			margin-top: 7px;
+			float: left;
+		}
+		
+		#fb-root{
+		}
+		
+		#borrame{
+			display: block;
+			float: left;
+		}
+		
+		#content{
+			width: 100% ;
+			height: 1000px;
+			background-color: white;
+		}
+		
+		#column1{
+			background-color: white;
+			width: 200px;
+			height: 100%;
+			float: left;
+		}
+		
+		#column1Inside{
+			background-color: white;
+			width: 190px;
+			margin: 10px 5px 5px 5px;
+			border-bottom: solid 1px #E3E3E3;
+			color: #666666;			
+		}
+		
+		#column2{
+			width: 598px;
+			height: 100%;
+			
+			float: left;
+			border-left:1px solid #E3E3E3;
+			border-right:1px solid #E3E3E3;			
+		}
+		
+		#column3{
+			background-color: white;
+			width: 200px;
+			height: 100%;			
+			float: left;
+		}
+		
+		#column3Inside{
+			background-color: white;
+			width: 190px;
+			height: 200px;
+			margin: 5px;
+			margin-top: 10px;			
+		}
+		
+
+		
+		#offerBgHeader{
+			width: 185px;
+			height: 15px;
+			background-color: #D1FFA3;
+			border-top-style: solid;
+			border-top-width: 1px;
+			border-top-color: #B8FF70;
+			padding-top: 3px;
+			padding-left: 5px;
+		}
+		
+		#footer{
+			margin:0 auto;			
+			padding: 0px 10px 0px 10px;
+			height: 80px;
+			background-color: #999999;
+			
+		}
+		
+		#column1Offer1{
+			
+		}
+		
+		#offerLoadingImage{
+			width: 95px;
+			height: 100px;
+			padding-left: 85px;
+			padding-top: 70px;			
+		
+		}
+		
+		.offerTitle a{
+			color: #52a300;
+			text-decoration: none;
+			font-weight: bold;			
+		}
+		
+		.offerTitle a:hover{
+			text-decoration: underline; 
+		}
+		
+		.offerDescription a{
+			width: 200px;
+		}
+		
+		#offerImage{
+			height: 120px;
+			width:	120px;
+			margin-left: 35px;
+			border: solid 1px #E3E3E3;
+			margin-top: 5px;
+			padding: 5px;
+		}
+		
+		#offerImageColumn3{
+			margin-left: 25px;
+			height: 120px;
+			width:	120px;
+			border: solid 1px #E3E3E3;
+			margin-top: 5px;
+			overflow: hidden;
+		}
+		
+		#column3OfferDescription{
+			margin-top: 5px;
+			color: #666666;
+		}
+		
+		a#offerXButton{
+			width: 20px;
+			height: 20px;
+			background-image: url('../images/offerXbutton.jpg');
+			float: right;
+		}
+		
+		a#offerXButton:Hover{
+			background-image: url('../images/offerXbuttonHover.jpg');
+		}
+		
+		#offerInfo{
+			background-color: white;
+			width:	100%;
+			height: 100px;
+			overflow:hidden;
+			margin-top: 5px;
+			
+		}
+		
+		#offerInfo1{
+			float:left;
+			width: 50%;
+			line-height:150%;
+		}
+		
+		#offerInfo2{
+			float:left;
+			width: 50%;
+		}

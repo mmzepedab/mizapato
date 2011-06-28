@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<shoes>
+	<shoe>
+		<organization>Carrion</organization>
+		<description>Zapato casual para damas temporada verano 2012</description>
+		<thumb>images/tshoe1.jpg</thumb>
+		<brand>Channel</brand>
+		<style>Casual</style>
+		<sizes>
+			<size>5</size>
+			<size>6</size>
+			<size>7</size>
+		</sizes>
+		<price>500.00</price>
+		<colors>
+			<color>Amarillo</color>
+			<color>Negro</color>
+			<color>Azul</color>
+			<color>Anaranjado</color>
+			<color>Verde</color>
+		</colors>
+		<likeLink>http://caminohn.com</likeLink>
+	</shoe>
+	
+</shoes>
