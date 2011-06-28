@@ -1,3 +1,4 @@
+//Jquery 
 $(document).ready(function(){
    
    if (window.XMLHttpRequest){// code for IE7+, Firefox, Chrome, Opera, Safari
