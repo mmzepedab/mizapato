@@ -1,6 +1,5 @@
 //Jquery 
-$(document).ready(function(){
-   
+$(document).ready(function(){ 
    if (window.XMLHttpRequest){// code for IE7+, Firefox, Chrome, Opera, Safari
 		xmlhttp=new XMLHttpRequest();
 	}else{// code for IE6, IE5
@@ -64,7 +63,7 @@ $(document).ready(function(){
 						<span class='offerTitle'><a href='#'>"+organization+"</a></span><br/>\
 						<span class='offerDescription'>"+description+"</span>\
 							<div id='offerImage'>\
-							<a href='images/shoe1.jpg' title='Zapato casual para dama' class='thickbox'><img src='"+thumb+"' alt='Single Image' title='Zapato casual para dama'/></a>\
+							<a href='images/shoe1.jpg' title='Zapato casual para dama' class='thickbox'><img src='"+thumb+"' alt='Single Image' title='"+description+"'/></a>\
 							<!-- <img src='images/shoe1Test.jpg' alt='Shoe1'/> -->\
 							</div>\
 							<div id='offerInfo'>\
@@ -78,8 +77,8 @@ $(document).ready(function(){
 							<b>Colores:</b> "+colorText+"<br/>\
 							</div>\
 							<div id='fb-root'></div><script src='http://connect.facebook.net/es_ES/all.js#appId=128033597279288&amp;xfbml=1'></script><fb:like href='"+likeLink+"' send='false' width='50' show_faces='false' font=''></fb:like>\
-						</div>";
-						alert(content);
+						</div>";						
+						//alert(content);
 						document.getElementById('column1Offer1').innerHTML  = content;
 			}
 		//document.getElementById("txtHint").innerHTML=xmlhttp.responseText;
@@ -88,19 +87,19 @@ $(document).ready(function(){
 	xmlhttp.open("GET","shoe.xml",true);
 	xmlhttp.send();
 	
-	 $('#offerXButton').click(function() {
-					$('#column1Offer1').fadeOut('fast', function() {
-					//var container = document.getElementById('image');
-					//container.innerHTML = '<img id='book' src='book2.png' alt='' width='100' height='123' />';
-					});
-					});
 
-					$('#offerXButton').click(function() {  
-					$('#column1Offer1').fadeIn('slow', function() {
-					// Animation complete.
-					});
-					});
-					
+	$('#offerXButton').click(function() {
+		$('#column1Offer1').fadeOut('fast', function() {
+			//var container = document.getElementById('image');
+			//container.innerHTML = '<img id='book' src='book2.png' alt='' width='100' height='123' />';
+		});
+	});
+	
+	$('#offerXButton').click(function() {  
+		$('#column1Offer1').fadeIn('slow', function() {
+			// Animation complete.
+		});
+	});				
 					
 	
  });
@@ -109,9 +108,10 @@ $(document).ready(function(){
  
 
 
-
-/*function load(){
-	setTimeout('doLoad()', 2000);
+/*
+function load(){
+	//setTimeout('doLoad()', 2000);
+	doLoad();
 }
 
 
