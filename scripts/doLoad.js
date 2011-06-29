@@ -1,11 +1,17 @@
 //Jquery 
 //$(document).ready(function(){
+var content;
+var offerNumber = 1;
+var k;
 function load(){ 
+   for(k=1; k<=3; k++ ){
    if (window.XMLHttpRequest){// code for IE7+, Firefox, Chrome, Opera, Safari
 		xmlhttp=new XMLHttpRequest();
 	}else{// code for IE6, IE5
 		xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
 	}
+	
+	
 	xmlhttp.onreadystatechange=function()
 	{
 		
@@ -80,9 +86,11 @@ function load(){
 							</div>\
 							<div id='fb-root'></div><script src='http://connect.facebook.net/es_ES/all.js#appId=128033597279288&amp;xfbml=1'></script><fb:like href='"+likeLink+"' send='false' width='50' show_faces='false' font=''></fb:like>\
 						</div>";						
-						//alert(content);
-						document.getElementById('column1Offer1').innerHTML  = content;						
+						//alert(content);					
+						
 			}
+			
+				
 			//Walk-around para cargar los scripts sin esto no funcionaria---------------------
 						var thickboxScript = document.createElement("script");
 						thickboxScript.type="text/javascript";
@@ -99,16 +107,35 @@ function load(){
 						facebookScript.src = "http://connect.facebook.net/en_US/all.js";
 						document.body.appendChild(facebookScript);
 			//--------------------------------------------------------------------------------
+			
+			
 		//document.getElementById("txtHint").innerHTML=xmlhttp.responseText;
 		}
+		createOffer();
 	}
+		
+	
 	xmlhttp.open("GET","shoe.xml",true);
 	xmlhttp.send();
-	
+	offerNumber++;
+	}
 	
 //});
 } 
 
+
+function firstLoad(){
+	load();			
+	//setTimeout('createOffer1()', 100);
+	setTimeout("", 500);
+	//createOffer1();
+	
+}
+
+function createOffer(){
+		alert(offerNumber);
+		document.getElementById('column1Offer'+offerNumber).innerHTML  = content;
+}
 
 
 /*
