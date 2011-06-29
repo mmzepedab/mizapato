@@ -10,17 +10,13 @@
 		<script src='http://code.jquery.com/jquery-latest.js'></script>
 		<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js'></script>
 		<script type='text/javascript' src='scripts/thickbox.js'></script>
-		<script type='text/javascript' src='scripts/doLoad.js'></script>
-		
+		<script type='text/javascript' src='scripts/doLoad.js'></script>		
 		<script type='text/javascript' src='scripts/jquery.js'></script>
-		
-		
-		
-				
+		<script type='text/javascript' src='scripts/imageTest.js'></script>
 		
 	</head> 
 	
-	<body onload="load();"> 
+	<body> 
 	<div id='container'>
 		<div id='header'>
 			<div id='logoHeader'></div>
@@ -65,7 +61,25 @@
 			<div id='column1'>
 				<div id='column1Inside'>
 					<div id='column1Offer1'>
-						<div id='offerLoadingImage'><img src="loader.gif" alt="some_text" align="center"/></div>
+						<a id='offerXButton' href='#' title='Mostrar otro' ></a>\
+						<span class='offerTitle'><a href='#'>Zapatos Ymas</a></span><br/>\
+						<span class='offerDescription'>Zapato casual para damas temporada verano 2012</span>\
+							<div id='offerImage'>\
+							<a href='images/shoe1.jpg' title='Zapato casual para dama' class='thickbox'><img src='images/tshoe1.jpg' alt='Single Image' title='Zapato casual para dama'/></a>\
+							<!-- <img src='images/shoe1Test.jpg' alt='Shoe1'/> -->\
+							</div>\
+							<div id='offerInfo'>\
+							<div id='offerInfo1'>\
+							<b>Marca:</b> Channel\
+							<b>Estilo:</b> Casual<br/>\
+							<b>Tallas:</b> 5 - 9<br/>\
+							<b>Precio:</b> L.500.00<br/>\
+							</div>\
+							<div id='offerInfo2'>\
+							<b>Colores:</b> Blanco, negro, mas.<br/>\
+							</div>\
+							<div id='fb-root'></div><script src='http://connect.facebook.net/es_ES/all.js#appId=128033597279288&amp;xfbml=1'></script><fb:like href='http://caminohn.com' send='false' width='50' show_faces='false' font=''></fb:like>\
+						</div>
 					</div>
 				</div>
 

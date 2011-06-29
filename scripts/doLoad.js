@@ -59,7 +59,7 @@ $(document).ready(function(){
 				//Fin Obtener el texto de los colores de zapatos con la primera letra mayuscula y las demas minusculas
 				//alert(organization+description+thumb+brand+style+size[0]+size[1]+price+color[0]+color[1]+likeLink);
 				
-				var content = "<a id='offerXButton' href='#' title='Mostrar otro' ></a>\
+				content = "<a id='offerXButton' href='#' title='Mostrar otro' ></a>\
 						<span class='offerTitle'><a href='#'>"+organization+"</a></span><br/>\
 						<span class='offerDescription'>"+description+"</span>\
 							<div id='offerImage'>\
@@ -80,6 +80,19 @@ $(document).ready(function(){
 						</div>";						
 						//alert(content);
 						document.getElementById('column1Offer1').innerHTML  = content;
+						
+						//Walk-around para cargar los scripts sin esto no funcionaria---------------------
+						var thickboxScript = document.createElement("script");
+						thickboxScript.type="text/javascript";
+						thickboxScript.src = "scripts/thickbox.js";
+						document.body.appendChild(thickboxScript);
+						
+						var fadeInOutScript = document.createElement("script");
+						fadeInOutScript.type="text/javascript";
+						fadeInOutScript.src = "scripts/fadeInOut.js";
+						document.body.appendChild(fadeInOutScript);
+						//--------------------------------------------------------------------------------
+						
 			}
 		//document.getElementById("txtHint").innerHTML=xmlhttp.responseText;
 		}
@@ -87,7 +100,7 @@ $(document).ready(function(){
 	xmlhttp.open("GET","shoe.xml",true);
 	xmlhttp.send();
 	
-
+	
 	$('#offerXButton').click(function() {
 		$('#column1Offer1').fadeOut('fast', function() {
 			//var container = document.getElementById('image');
@@ -105,7 +118,6 @@ $(document).ready(function(){
  });
  
 
- 
 
 
 /*
