@@ -1,5 +1,6 @@
 //Jquery 
-$(document).ready(function(){ 
+//$(document).ready(function(){
+function load(){ 
    if (window.XMLHttpRequest){// code for IE7+, Firefox, Chrome, Opera, Safari
 		xmlhttp=new XMLHttpRequest();
 	}else{// code for IE6, IE5
@@ -7,6 +8,7 @@ $(document).ready(function(){
 	}
 	xmlhttp.onreadystatechange=function()
 	{
+		
 		if (xmlhttp.readyState==4 && xmlhttp.status==200)
 		{
 			//alert(xmlhttp.responseText);
@@ -79,9 +81,9 @@ $(document).ready(function(){
 							<div id='fb-root'></div><script src='http://connect.facebook.net/es_ES/all.js#appId=128033597279288&amp;xfbml=1'></script><fb:like href='"+likeLink+"' send='false' width='50' show_faces='false' font=''></fb:like>\
 						</div>";						
 						//alert(content);
-						document.getElementById('column1Offer1').innerHTML  = content;
-						
-						//Walk-around para cargar los scripts sin esto no funcionaria---------------------
+						document.getElementById('column1Offer1').innerHTML  = content;						
+			}
+			//Walk-around para cargar los scripts sin esto no funcionaria---------------------
 						var thickboxScript = document.createElement("script");
 						thickboxScript.type="text/javascript";
 						thickboxScript.src = "scripts/thickbox.js";
@@ -91,9 +93,12 @@ $(document).ready(function(){
 						fadeInOutScript.type="text/javascript";
 						fadeInOutScript.src = "scripts/fadeInOut.js";
 						document.body.appendChild(fadeInOutScript);
-						//--------------------------------------------------------------------------------
 						
-			}
+						var facebookScript = document.createElement("script");
+						facebookScript.type="text/javascript";
+						facebookScript.src = "http://connect.facebook.net/en_US/all.js";
+						document.body.appendChild(facebookScript);
+			//--------------------------------------------------------------------------------
 		//document.getElementById("txtHint").innerHTML=xmlhttp.responseText;
 		}
 	}
@@ -101,22 +106,8 @@ $(document).ready(function(){
 	xmlhttp.send();
 	
 	
-	$('#offerXButton').click(function() {
-		$('#column1Offer1').fadeOut('fast', function() {
-			//var container = document.getElementById('image');
-			//container.innerHTML = '<img id='book' src='book2.png' alt='' width='100' height='123' />';
-		});
-	});
-	
-	$('#offerXButton').click(function() {  
-		$('#column1Offer1').fadeIn('slow', function() {
-			// Animation complete.
-		});
-	});				
-					
-	
- });
- 
+//});
+} 
 
 
 
