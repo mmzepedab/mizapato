@@ -226,6 +226,19 @@
 			color: #666666;
 		}
 		
+		a#organizationXButton{
+			width: 20px;
+			height: 20px;
+			background-image: url('../images/offerXbutton.jpg');
+			float: right;
+		}
+		
+		a#organizationXButton:Hover{
+			background-image: url('../images/offerXbuttonHover.jpg');
+		}
+		
+		
+		
 		a.offerXButton{
 			width: 20px;
 			height: 20px;

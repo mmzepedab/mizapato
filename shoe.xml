@@ -3,7 +3,7 @@
 	<shoe>
 		<organization>Amazing Shoé's</organization>
 		<description>Zapato casual para damas temporada verano 2012</description>
-		<thumb>images/tshoe1.jpg</thumb>
+		<thumb>images/1tshoe1.jpg</thumb>
 		<brand>Channel</brand>
 		<style>Casual</style>
 		<sizes>
@@ -25,7 +25,7 @@
 	<shoe>
 		<organization>Carrion Outlet</organization>
 		<description>Zapato formal dama en oferta hasta el 31 de octubre</description>
-		<thumb>images/tshoe1.jpg</thumb>
+		<thumb>images/shoe1Test.jpg</thumb>
 		<brand>Givenchy</brand>
 		<style>Formal</style>
 		<sizes>

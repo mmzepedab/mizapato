@@ -76,7 +76,7 @@ function load(){
 									<span class='offerTitle'><a href='#'>"+organization+"</a></span><br/>\
 									<span class='offerDescription'>"+description+"</span>\
 									<div id='offerImage'>\
-									<a href='images/shoe1.jpg' title='Zapato casual para dama' class='thickbox'><img src='"+thumb+"' alt='Single Image' title='"+description+"'/></a>\
+									<a href='images/11shoe1.jpg' title='"+description+"' class='thickbox'><img src='"+thumb+"' alt='Single Image' title='"+description+"'/></a>\
 									<!-- <img src='images/shoe1Test.jpg' alt='Shoe1'/> -->\
 									</div>\
 									<div id='offerInfo'>\

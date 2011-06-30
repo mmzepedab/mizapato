@@ -67,57 +67,8 @@
 						<div id='offerLoadingImage'><img src='loader.gif'></div> 
 					</div>
 				</div>
-
-				
-				
-				<div id='column1Inside'>
-					<div id='column1Offer2'>
-						
-						<a id='offerXButton' href='#' title='Mostrar otro' ></a>
-						<span class='offerTitle'><a href='#'>Multizapatos</a></span><br/>
-						<span class='offerDescription'>Zapato formal para dama en varios tamaños y colores, para este verano e invierno totalmente adecuados para cualquier ocacion</span>					
-						<div id='offerXButton'></div>
-						<div id='offerImage'><img src='images/shoe2Test.jpg' alt='Shoe2' /></div>
-						<div id='offerInfo'>
-							<div id='offerInfo1'>
-							<b>Marca:</b> Channel
-							<b>Estilo:</b> Casual<br/>
-							<b>Tallas:</b> 5 - 9<br/>
-							<b>Precio:</b> L.500.00<br/>	
-							</div>
-							<div id='offerInfo2'>
-							<b>Colores:</b> Blanco, negro, mas.<br/>
-							</div>
-							<div id='fb-root'></div><script src='http://connect.facebook.net/en_US/all.js#appId=128033597279288&amp;xfbml=1'></script><fb:like href='http://caminohn.com' send='false' width='50' show_faces='false' font=''></fb:like>
-						</div>
-					
-					</div>
-				</div>
-				
-				
-				<div id='column1Inside'>
-					<div id='column1Offer3'>
-						<a id='offerXButton' href='#' title='Mostrar otro' ></a>
-						<span class='offerTitle'><a href='#'>Estilos Shoes</a></span><br/>
-						<span class='offerDescription'>Zapato casual para damas temporada verano 2012</span>
-						<div id='offerXButton'></div>
-						<div id='offerImage'><img src='images/shoe3Test.jpg' alt='Shoe3' /></div>
-						<div id='offerInfo'>
-						<div id='offerInfo1'>
-							<b>Marca:</b> Channel
-							<b>Estilo:</b> Casual<br/>
-							<b>Tallas:</b> 5 - 9<br/>
-							<b>Precio:</b> L.500.00<br/>	
-							</div>
-							<div id='offerInfo2'>
-							<b>Colores:</b> Blanco, negro, mas.<br/>
-							</div>
-							<div id='fb-root'></div><script src='http://connect.facebook.net/en_US/all.js#appId=128033597279288&amp;xfbml=1'></script><fb:like href='http://caminohn.com' send='false' width='50' show_faces='false' font=''></fb:like>
-						</div>
-					</div>
-				</div>
-				
-			</div> 
+			</div>
+			
 			<div id='column2'>
 			
 			<!-- <a href='images/single.jpg' title='Zapato casual para dama' class='thickbox'><img src='images/single_t.jpg' alt='Single Image' title='Zapato casual para dama'/></a> -->
@@ -125,7 +76,7 @@
 			<div id='column3'>
 				<div id='column3Inside'>
 					<div id='column3Offer1'>
-						<a id='offerXButton' href='#' title='Mostrar otro' ></a>
+						<a id='organizationXButton' href='#' title='Mostrar otro' ></a>
 						<div id='offerBgHeader' class='offerTitle'>
 							<a href='#'>Tiendas Carrion Outlet</a>
 						</div>
@@ -137,7 +88,7 @@
 				
 				<div id='column3Inside'>
 					<div id='column3Offer1'>
-						<a id='offerXButton' href='#' title='Mostrar otro' ></a>
+						<a id='organizationXButton' href='#' title='Mostrar otro' ></a>
 						<div id='offerBgHeader' class='offerTitle'>
 							<a href='#'>Mendel's la moda esta aqui</a>
 						</div>
