@@ -124,7 +124,7 @@ function load(){
 	}
 		
 	
-	xmlhttp.open("GET","shoe.xml",true);
+	xmlhttp.open("GET","http://localhost/shoe/scripts/xml.php",true);
 	xmlhttp.send();
 	
 	

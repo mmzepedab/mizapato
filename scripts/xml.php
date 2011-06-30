@@ -1,7 +1,11 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<shoes>
+<?PHP
+  header('Content-Type: text/xml');
+  echo '<?xml version="1.0" encoding="iso-8859-1" standalone="yes"?>' . "\n";
+
+
+echo "<shoes>
 	<shoe>
-		<organization>Amazing Sho&eacute;s</organization>
+		<organization>Amazing Shoé's</organization>
 		<description>Zapato casual para damas temporada verano 2012</description>
 		<thumb>images/1tshoe1.jpg</thumb>
 		<brand>Channel</brand>
@@ -50,7 +54,7 @@
 	
 	<shoe>
 		<organization>Mendel's Cascadas Mall</organization>
-		<description>Sandalia para baÃ±o</description>
+		<description>Sandalia para baño</description>
 		<thumb>images/tshoe1.jpg</thumb>
 		<brand>Infinity</brand>
 		<style>Sandalia</style>
@@ -64,4 +68,6 @@
 		<likeLink>http://google.com</likeLink>
 	</shoe>
 	
-</shoes>
+</shoes>";
+
+?>
