@@ -43,7 +43,11 @@ function load(){
 				var sizeMin = Math.min.apply(null, size);
 				var sizeMax = Math.max.apply(null, size);
 				// Fin de (Obtener los numeros mayores y menores del arreglo de tamaño de los zapatos)
-				var sizeText = sizeMin+" - "+sizeMax;
+				if(sizeLength>1){
+					var sizeText = sizeMin+" - "+sizeMax;
+				}else{
+					var sizeText = sizeMin;
+				}
 				//alert(textSize);
 				
 				price = x[i].getElementsByTagName("price")[0].firstChild.nodeValue;				
@@ -67,8 +71,8 @@ function load(){
 				//alert(organization+description+thumb+brand+style+size[0]+size[1]+price+color[0]+color[1]+likeLink);
 				
 				content += "<div id='column1Inside'>\
-								<div id='column1Offer1'>\
-									<a id='offerXButton' href='#' title='Mostrar otro' ></a>\
+								<div id='column1Offer"+(i+1)+"'>\
+									<a class='offerXButton' id='offerXButton"+(i+1)+"' href='#' rel='async' title='Mostrar otro' ></a>\
 									<span class='offerTitle'><a href='#'>"+organization+"</a></span><br/>\
 									<span class='offerDescription'>"+description+"</span>\
 									<div id='offerImage'>\
