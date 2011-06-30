@@ -22,4 +22,47 @@
 		<likeLink>http://caminohn.com</likeLink>
 	</shoe>
 	
+	<shoe>
+		<organization>Carrion Outlet</organization>
+		<description>Zapato formal dama en oferta hasta el 31 de octubre</description>
+		<thumb>images/tshoe1.jpg</thumb>
+		<brand>Givenchy</brand>
+		<style>Formal</style>
+		<sizes>
+			<size>3</size>
+			<size>4</size>
+			<size>5</size>
+			<size>6</size>
+			<size>7</size>
+			<size>8</size>
+			<size>9</size>
+		</sizes>
+		<price>2,725.00</price>
+		<colors>
+			<color>Cafe</color>
+			<color>Rojo</color>
+			<color>Gris</color>
+			<color>Blanco</color>
+			<color>Negro</color>
+		</colors>
+		<likeLink>http://facebook.com</likeLink>
+	</shoe>
+	
+	<shoe>
+		<organization>Mendel's Cascadas Mall</organization>
+		<description>Sandalia para baño</description>
+		<thumb>images/tshoe1.jpg</thumb>
+		<brand>Infinity</brand>
+		<style>Sandalia</style>
+		<sizes>
+			<size>9</size>
+		</sizes>
+		<price>125.00</price>
+		<colors>
+			<color>Blanca</color>
+			<color>Azul</color>
+		</colors>
+		<likeLink>http://google.com</likeLink>
+	</shoe>
+	
 </shoes>

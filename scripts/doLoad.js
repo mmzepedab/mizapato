@@ -1,10 +1,7 @@
 //Jquery 
 //$(document).ready(function(){
-var content;
-var offerNumber = 1;
-var k;
 function load(){ 
-   for(k=1; k<=3; k++ ){
+   
    if (window.XMLHttpRequest){// code for IE7+, Firefox, Chrome, Opera, Safari
 		xmlhttp=new XMLHttpRequest();
 	}else{// code for IE6, IE5
@@ -20,6 +17,8 @@ function load(){
 			//alert(xmlhttp.responseText);
 			//alert("Hey");
 			x=xmlhttp.responseXML.documentElement.getElementsByTagName("shoe");
+			content = "";
+			//for(p=1; p<=3; p++){
 			for (i=0;i<x.length;i++){
 				var organization = x[i].getElementsByTagName("organization")[0].firstChild.nodeValue;
 				var description = x[i].getElementsByTagName("description")[0].firstChild.nodeValue;
@@ -67,29 +66,34 @@ function load(){
 				//Fin Obtener el texto de los colores de zapatos con la primera letra mayuscula y las demas minusculas
 				//alert(organization+description+thumb+brand+style+size[0]+size[1]+price+color[0]+color[1]+likeLink);
 				
-				content = "<a id='offerXButton' href='#' title='Mostrar otro' ></a>\
-						<span class='offerTitle'><a href='#'>"+organization+"</a></span><br/>\
-						<span class='offerDescription'>"+description+"</span>\
-							<div id='offerImage'>\
-							<a href='images/shoe1.jpg' title='Zapato casual para dama' class='thickbox'><img src='"+thumb+"' alt='Single Image' title='"+description+"'/></a>\
-							<!-- <img src='images/shoe1Test.jpg' alt='Shoe1'/> -->\
-							</div>\
-							<div id='offerInfo'>\
-							<div id='offerInfo1'>\
-							<b>Marca:</b> "+brand+"\
-							<b>Estilo:</b> "+style+"<br/>\
-							<b>Tallas:</b> "+sizeText+"<br/>\
-							<b>Precio:</b>  L."+price+"<br/>\
-							</div>\
-							<div id='offerInfo2'>\
-							<b>Colores:</b> "+colorText+"<br/>\
-							</div>\
-							<div id='fb-root'></div><script src='http://connect.facebook.net/es_ES/all.js#appId=128033597279288&amp;xfbml=1'></script><fb:like href='"+likeLink+"' send='false' width='50' show_faces='false' font=''></fb:like>\
-						</div>";						
+				content += "<div id='column1Inside'>\
+								<div id='column1Offer1'>\
+									<a id='offerXButton' href='#' title='Mostrar otro' ></a>\
+									<span class='offerTitle'><a href='#'>"+organization+"</a></span><br/>\
+									<span class='offerDescription'>"+description+"</span>\
+									<div id='offerImage'>\
+									<a href='images/shoe1.jpg' title='Zapato casual para dama' class='thickbox'><img src='"+thumb+"' alt='Single Image' title='"+description+"'/></a>\
+									<!-- <img src='images/shoe1Test.jpg' alt='Shoe1'/> -->\
+									</div>\
+									<div id='offerInfo'>\
+									<div id='offerInfo1'>\
+									<b>Marca:</b> "+brand+"\
+									<b>Estilo:</b> "+style+"<br/>\
+									<b>Tallas:</b> "+sizeText+"<br/>\
+									<b>Precio:</b>  L."+price+"<br/>\
+									</div>\
+									<div id='offerInfo2'>\
+									<b>Colores:</b> "+colorText+"<br/>\
+									</div>\
+									<div id='fb-root'></div><script src='http://connect.facebook.net/es_ES/all.js#appId=128033597279288&amp;xfbml=1'></script><fb:like href='"+likeLink+"' send='false' width='50' show_faces='false' font=''></fb:like>\
+									</div>\
+								</div>\
+							</div>";
+				
 						//alert(content);					
 						
 			}
-			
+			//}
 				
 			//Walk-around para cargar los scripts sin esto no funcionaria---------------------
 						var thickboxScript = document.createElement("script");
@@ -110,15 +114,16 @@ function load(){
 			
 			
 		//document.getElementById("txtHint").innerHTML=xmlhttp.responseText;
+		
 		}
-		createOffer();
+		document.getElementById('column1').innerHTML  = content;
 	}
 		
 	
 	xmlhttp.open("GET","shoe.xml",true);
 	xmlhttp.send();
-	offerNumber++;
-	}
+	
+	
 	
 //});
 } 
@@ -132,10 +137,7 @@ function firstLoad(){
 	
 }
 
-function createOffer(){
-		alert(offerNumber);
-		document.getElementById('column1Offer'+offerNumber).innerHTML  = content;
-}
+
 
 
 /*
