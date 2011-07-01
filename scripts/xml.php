@@ -1,73 +1,54 @@
 <?PHP
-  header('Content-Type: text/xml');
-  echo '<?xml version="1.0" encoding="iso-8859-1" standalone="yes"?>' . "\n";
+ 
+  $organization = "Amazing SHOE'S";
+  $description = "Zapato casual para damas temporada verano 2012";
+  $thumb = "images/1tshoe1.jpg";
+  $brand = "Channel";
+  $style = "Casual";
+  
+  ###############################################################################################
+  #									Get all sizes from an array									#	 			
+  ###############################################################################################
+  $size = array(11, 21, 31, 14, 75, 4, 5, 6, 7, 7, 20, 7, 7);
+  $sizeLength = count($size);
+  $sizeText = "";
+  for($i=0; $i<$sizeLength; $i++){
+		$sizeText = $sizeText."<size>".$size[$i]."</size>";	
+  } 
+  
+  $price = "512.75";
+  
+  ###############################################################################################
+  #									Get all colors from an array								#	 			
+  ###############################################################################################
+  $color = array("Azul", "Dorado", "Morado", "Celeste", "Verde", "Cafe", "Gris", "Amarillo");
+  $colorLength = count($color);
+  $colorText = "";
+  for($i=0; $i<$colorLength; $i++){
+		$colorText = $colorText."<color>".$color[$i]."</color>";	
+  }
 
-
-echo "<shoes>
-	<shoe>
-		<organization>Amazing Shoé's</organization>
-		<description>Zapato casual para damas temporada verano 2012</description>
-		<thumb>images/1tshoe1.jpg</thumb>
-		<brand>Channel</brand>
-		<style>Casual</style>
-		<sizes>
-			<size>5</size>
-			<size>6</size>
-			<size>7</size>
-		</sizes>
-		<price>500.00</price>
-		<colors>
-			<color>Amarillo</color>
-			<color>Negro</color>
-			<color>Azul</color>
-			<color>Anaranjado</color>
-			<color>Verde</color>
-		</colors>
-		<likeLink>http://caminohn.com</likeLink>
-	</shoe>
-	
-	<shoe>
-		<organization>Carrion Outlet</organization>
-		<description>Zapato formal dama en oferta hasta el 31 de octubre</description>
-		<thumb>images/shoe1Test.jpg</thumb>
-		<brand>Givenchy</brand>
-		<style>Formal</style>
-		<sizes>
-			<size>3</size>
-			<size>4</size>
-			<size>5</size>
-			<size>6</size>
-			<size>7</size>
-			<size>8</size>
-			<size>9</size>
-		</sizes>
-		<price>2,725.00</price>
-		<colors>
-			<color>Cafe</color>
-			<color>Rojo</color>
-			<color>Gris</color>
-			<color>Blanco</color>
-			<color>Negro</color>
-		</colors>
-		<likeLink>http://facebook.com</likeLink>
-	</shoe>
-	
-	<shoe>
-		<organization>Mendel's Cascadas Mall</organization>
-		<description>Sandalia para baño</description>
-		<thumb>images/tshoe1.jpg</thumb>
-		<brand>Infinity</brand>
-		<style>Sandalia</style>
-		<sizes>
-			<size>9</size>
-		</sizes>
-		<price>125.00</price>
-		<colors>
-			<color>Blanco</color>
-		</colors>
-		<likeLink>http://google.com</likeLink>
-	</shoe>
-	
-</shoes>";
+  $likeLink = "http://caminohn.com";
+  
+  $content = "<shoes>";
+  
+  for($i=0; $i<3; $i++){
+		$content = $content."<shoe>
+		<organization>$organization</organization>
+		<description>$description</description>
+		<thumb>$thumb</thumb>
+		<brand>$brand</brand>
+		<style>$style</style>
+		<sizes>$sizeText</sizes>
+		<price>$price</price>
+		<colors>$colorText</colors>
+		<likeLink>$likeLink</likeLink>
+	</shoe>";
+  }
+  $content = $content."</shoes>";
+  
+header('Content-Type: text/xml');  
+echo '<?xml version="1.0" encoding="iso-8859-1" standalone="yes"?>' . "\n";
+echo $content;
 
 ?>
