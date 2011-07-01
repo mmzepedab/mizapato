@@ -66,7 +66,7 @@ function load(){
 				//Obtener el texto de los colores de zapatos con la primera letra mayuscula y las demas minusculas
 				colorText = colorText.toLowerCase();
 				colorText = colorText.charAt(0).toUpperCase() + colorText.substr(1);
-				likeLink = x[i].getElementsByTagName("likeLink")[0].firstChild.nodeValue; 
+				likeLink = x[i].getElementsByTagName("likeLink")[0].firstChild.nodeValue;
 				//Fin Obtener el texto de los colores de zapatos con la primera letra mayuscula y las demas minusculas
 				//alert(organization+description+thumb+brand+style+size[0]+size[1]+price+color[0]+color[1]+likeLink);
 				
