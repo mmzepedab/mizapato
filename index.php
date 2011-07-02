@@ -22,7 +22,7 @@
 	<body onLoad='load();'> 
 	<div id='container'>
 		<div id='header'>
-			<div id='logoHeader'></div>
+			<div id='logoHeader'><a href="#" onClick='load();'><img src='images/logoHeader.png'></a></div>
 			
 			<div id='navigationBar'>
 			

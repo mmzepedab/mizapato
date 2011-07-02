@@ -8,7 +8,7 @@ function load(){
 		xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
 	}
 	
-	
+	content = "";
 	xmlhttp.onreadystatechange=function()
 	{
 		
@@ -17,7 +17,7 @@ function load(){
 			//alert(xmlhttp.responseText);
 			//alert("Hey");
 			x=xmlhttp.responseXML.documentElement.getElementsByTagName("shoe");
-			content = "";
+			//content = "";
 			//for(p=1; p<=3; p++){
 			for (i=0;i<x.length;i++){
 				var organization = x[i].getElementsByTagName("organization")[0].firstChild.nodeValue;
