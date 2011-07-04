@@ -1,0 +1,23 @@
+<html xmlns='http://www.w3.org/1999/xhtml' xmlns:fb='http://www.facebook.com/2008/fbml'> 
+	<head> 		
+		
+	</head> 
+	
+	<body onLoad="var head= document.getElementsByTagName('head')[0];
+   var script= document.createElement('script');
+   script.type= 'text/javascript';
+   alert(window.location.protocol+'//'+document.location.hostname+'/shoe/carrion/doLoad.js');   
+   script.src = window.location.protocol+'//'+document.location.hostname+'/shoe/carrion/doLoad.js';
+   head.appendChild(script);
+   
+   var script= document.createElement('script');
+   script.type= 'text/javascript';
+   alert(window.location.protocol+'//'+document.location.hostname+'/shoe/carrion/doLoad.js');  
+   script.src = window.location.protocol+'//'+document.location.hostname+'/shoe/carrion/dontLoad.js';
+   head.appendChild(script);
+   "> 
+   <input type="button" onClick="load();"></input>
+	
+	</body> 
+	
+</html>

@@ -9,16 +9,17 @@
 		<link rel='stylesheet' type='text/css' href='styles/styles.css'>
 		<script src='http://code.jquery.com/jquery-latest.js'></script>
 		<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js'></script>
-		<script type='text/javascript' src='scripts/loadScript.js'></script>	
+		<script type='text/javascript' src='scripts/doLoad.js'></script>	
 		<script type='text/javascript' src='scripts/jquery.js'></script>
 		<script type='text/javascript' src='scripts/thickbox.js'></script>
 		<script type='text/javascript' src='scripts/fadeInOut.js'></script>
+			
 		
 		
 		
 	</head> 
 	
-	<body onLoad='loadScript();'> 
+	<body onLoad='load();'> 
 	<div id='container'>
 		<div id='header'>
 			<div id='logoHeader'><a href="#" onClick='load();'><img src='images/logoHeader.png'></a></div>

@@ -1,0 +1,19 @@
+<html xmlns='http://www.w3.org/1999/xhtml' xmlns:fb='http://www.facebook.com/2008/fbml'> 
+	<head> 		
+		<script type='text/javascript' src='test.js'></script>
+	</head> 
+	
+	<body onLoad="
+	var head= document.getElementsByTagName('head')[0];   
+   var script= document.createElement('script');
+   script.type= 'text/javascript';
+   alert(window.location.protocol+'//'+document.location.hostname+'/shoe/scripts/constants.js');  
+   script.src = window.location.protocol+'//'+document.location.hostname+'/shoe/scripts/constants.js';
+   head.appendChild(script);
+   
+   "> 
+   <input type="button" onClick="test();"></input>
+	
+	</body> 
+	
+</html>
