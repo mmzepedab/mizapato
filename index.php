@@ -4,34 +4,28 @@
 <html xmlns='http://www.w3.org/1999/xhtml' xmlns:fb='http://www.facebook.com/2008/fbml'> 
 	<head> 
 		<title>Shoe</title>
-		<link rel='stylesheet' href='styles/thickbox.css' type='text/css' media='screen' />
-		<link rel='stylesheet' type='text/css' href='styles/reset.css'>
-		<link rel='stylesheet' type='text/css' href='styles/styles.css'>
-		<script src='http://code.jquery.com/jquery-latest.js'></script>
-		<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js'></script>
+		<link rel='stylesheet' href='styles/thickbox.css' type='text/css' media='screen'></link>
+		<link rel='stylesheet' type='text/css' href='styles/reset.css'></link>
+		<link rel='stylesheet' type='text/css' href='styles/styles.css'></link>
 		<script type='text/javascript' src='scripts/loadScript.js'></script>	
-		<script type='text/javascript' src='scripts/jquery.js'></script>
-		<script type='text/javascript' src='scripts/thickbox.js'></script>
-		<script type='text/javascript' src='scripts/fadeInOut.js'></script>
-		
-		
-		
+		<script type='text/javascript' src='scripts/constants.js'></script>			
 	</head> 
 	
-	<body onLoad='loadScript();'> 
+	<body onload='loadScript();'>
+
 	<div id='container'>
 		<div id='header'>
-			<div id='logoHeader'><a href="#" onClick='load();'><img src='images/logoHeader.png'></a></div>
+			<div id='logoHeader'><a href="#" onclick='load();'><img src='images/logoHeader.png' alt='mizapato_logo'></img></a></div>
 			
 			<div id='navigationBar'>
 			
 			<div id='searchHeader'>
 			<div id='navigationMenu'>
 				<ul id='pageNavigation'>
-					<li id='navigationCategory'><a href='#'>Categorias</a></li>
-					<li id='navigationCategory'><a href='#'>Marcas</a></li>
-					<li id='navigationCategory'><a href='#'>Tamaños</a></li>
-					<li id='navigationCategory'><a href='#'>Colores</a></li>
+					<li class='navigationCategory'><a href='#'>Categorias</a></li>
+					<li class='navigationCategory'><a href='#'>Marcas</a></li>
+					<li class='navigationCategory'><a href='#'>Tamaños</a></li>
+					<li class='navigationCategory'><a href='#'>Colores</a></li>
 				</ul>
 			</div>
 			<input class='inputSearchHeader' type='text'>
@@ -63,7 +57,7 @@
 			<div id='column1'>
 				<div id='column1Inside'>
 					<div id='column1Offer1'>
-						<div id='offerLoadingImage'><img src='loader.gif'></div> 
+						<div id='offerLoadingImage'><img src='loader.gif' alt='loading_image'></img></div> 
 					</div>
 				</div>
 			</div>
@@ -75,32 +69,14 @@
 			<div id='column3'>
 				<div id='column3Inside'>
 					<div id='column3Offer1'>
-						<a id='organizationXButton' href='#' title='Mostrar otro' ></a>
-						<div id='offerBgHeader' class='offerTitle'>
-							<a href='#'>Tiendas Carrion Outlet</a>
-						</div>
-						<div id='offerImageColumn3'><img src='images/carrion.jpg' alt='Shoe3' /></div>
-						<div id='column3OfferDescription'>Tiendas Carrion somos primeros en todo, si quiere encontrar las mejores ofertas en zapatos no dude en visitaronos</div>
+						<div id='offerLoadingImage'><img src='loader.gif' alt='loading_image'></img></div>
 					</div>
 				</div>
 				
 				
-				<div id='column3Inside'>
-					<div id='column3Offer1'>
-						<a id='organizationXButton' href='#' title='Mostrar otro' ></a>
-						<div id='offerBgHeader' class='offerTitle'>
-							<a href='#'>Mendel's la moda esta aqui</a>
-						</div>
-						<div id='offerImageColumn3'><img src='images/carrion.jpg' alt='Shoe3' /></div>
-						<div id='column3OfferDescription'>Desde este viernes 31 hasta el martes 23 tendremos promociones de 25, 30 y 50% en todos los estilos de zapato para dama, ven y visitanos.</div>
-					</div>				
-				</div>
 				
 				
-				<div id='column3Inside'>
-				
-				
-				</div>
+
 			</div>
 		</div>
 		<div id='footer'>Footer</div>
@@ -108,3 +84,5 @@
 	</body> 
 	
 </html>
+
+

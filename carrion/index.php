@@ -4,9 +4,9 @@
 <html xmlns='http://www.w3.org/1999/xhtml' xmlns:fb='http://www.facebook.com/2008/fbml'> 
 	<head> 
 		<title>Shoe</title>
-		<link rel='stylesheet' href='styles/thickbox.css' type='text/css' media='screen' />
-		<link rel='stylesheet' type='text/css' href='<?php echo "../styles/reset.css";?>'>
-		<link rel='stylesheet' type='text/css' href='<?php $root = $_SERVER['DOCUMENT_ROOT'];echo "$root/shoe/styles/styles.css";?>'>
+		<link rel='stylesheet' href='styles/thickbox.css' type='text/css' media='screen'/>
+		<link rel='stylesheet' type='text/css' href='styles/reset.css'/>
+		<link rel='stylesheet' type='text/css' href='styles/styles.css'/>
 		<script src='http://code.jquery.com/jquery-latest.js'></script>
 		<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js'></script>
 		<script type='text/javascript' src='/scripts/doLoad.js'></script>	
@@ -22,7 +22,7 @@
 	<body onLoad='load();'> 
 	<div id='container'>
 		<div id='header'>
-			<div id='logoHeader'><a href="#" onClick='load();'><img src='../images/logoHeader.png'></a></div>
+			<div id='logoHeader'><a href="#" onClick='load();'><img src='../images/logoHeader.png' alt='mizapato_logo'></img></a></div>
 			
 			<div id='navigationBar'>
 			

@@ -1,9 +1,6 @@
 //Jquery 
 //$(document).ready(function(){
-function load(){ 
-   
-   
-   
+function load(){   
    if (window.XMLHttpRequest){// code for IE7+, Firefox, Chrome, Opera, Safari
 		xmlhttp=new XMLHttpRequest();
 	}else{// code for IE6, IE5
@@ -96,7 +93,8 @@ function load(){
 								</div>\
 							</div>";
 				
-						//alert(content);					
+						//alert(content);
+						
 						
 			}
 			//}
@@ -123,11 +121,15 @@ function load(){
 		
 		}
 		document.getElementById('column1').innerHTML  = content;
+		if(xmlhttp.readyState==4){
+			loadSponsor();
+		}
 	}
 		
 	
 	xmlhttp.open("GET","http://localhost/shoe/scripts/xml.php",true);
 	xmlhttp.send();
+	
 	
 	
 	
@@ -143,7 +145,48 @@ function firstLoad(){
 	
 }
 
+function loadSponsor(){
+	if (window.XMLHttpRequest){// code for IE7+, Firefox, Chrome, Opera, Safari
+		xmlhttp=new XMLHttpRequest();
+	}else{// code for IE6, IE5
+		xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+	}
+	
+	sponsor = "";
+	xmlhttp.onreadystatechange=function()
+	{
+		if (xmlhttp.readyState==4 && xmlhttp.status==200)
+		{
+	x=xmlhttp.responseXML.documentElement.getElementsByTagName("shoe");
+	alert(x);
+	sponsor += "<div id='column3Inside'>\
+				<div id='column3Offer1'>\
+					<a id='organizationXButton' href='#' title='Mostrar otro' ></a>\
+					<div id='offerBgHeader' class='offerTitle'>\
+					<a href='#'>Tiendas Carrion Outlet</a>\
+					</div>\
+					<div id='offerImageColumn3'><img src='images/carrion.jpg' alt='Shoe3' /></div>\
+					<div id='column3OfferDescription'>Tiendas Carrion somos primeros en todo, si quiere encontrar las mejores ofertas en zapatos no dude en visitaronos</div>\
+				</div>\
+				</div>\
+				<div id='column3Inside'>\
+					<div id='column3Offer2'>\
+						<a id='organizationXButton' href='#' title='Mostrar otro' ></a>\
+						<div id='offerBgHeader' class='offerTitle'>\
+							<a href='#'>Mendel's la moda esta aqui</a>\
+						</div>\
+						<div id='offerImageColumn3'><img src='images/carrion.jpg' alt='Shoe3' /></div>\
+						<div id='column3OfferDescription'>Desde este viernes 31 hasta el martes 23 tendremos promociones de 25, 30 y 50% en todos los estilos de zapato para dama, ven y visitanos.</div>\
+					</div>\
+				</div>\ ";
+	
+		}
+	document.getElementById('column3').innerHTML  = sponsor;
+	}
 
+	xmlhttp.open("GET","http://localhost/shoe/scripts/xml.php",true);
+	xmlhttp.send();
+}
 
 
 /*
@@ -178,4 +221,6 @@ function doLoad(){
 						
 
 }*/
+
+
 
