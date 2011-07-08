@@ -163,7 +163,7 @@ function loadSponsor(){
 				<div id='column3Offer1'>\
 					<a id='organizationXButton' href='#' title='Mostrar otro' ></a>\
 					<div id='offerBgHeader' class='offerTitle'>\
-					<a href='#'>Tiendas Carrion Outlet</a>\
+					<a href='#'>Tiendas Carrion Outlet #2</a>\
 					</div>\
 					<div id='offerImageColumn3'><img src='images/carrion.jpg' alt='Shoe3' /></div>\
 					<div id='column3OfferDescription'>Tiendas Carrion somos primeros en todo, si quiere encontrar las mejores ofertas en zapatos no dude en visitaronos</div>\

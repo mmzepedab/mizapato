@@ -28,31 +28,31 @@
   ###############################################################################################
   #									Get all sizes from an array									#	 			
   ###############################################################################################
-  $size = array(11, 21, 31, 14, 75, 4, 5, 6, 7, 7, 20, 7, 7);
+  /*$size = array(11, 21, 31, 14, 75, 4, 5, 60, 899, 7, 7, 20, 7, 7);
   $sizeLength = count($size);
   $sizeText = "";
   for($i=0; $i<$sizeLength; $i++){
 		$sizeText = $sizeText."<size>".$size[$i]."</size>";	
-  } 
+  }* 
   
   //$price = "512.75";
   
   ###############################################################################################
   #									Get all colors from an array								#	 			
   ###############################################################################################
-  $color = array("Azul", "Dorado", "Morado", "Celeste", "Verde", "Cafe", "Gris", "Amarillo");
+  /*$color = array("Azul", "Dorado", "Morado", "Celeste", "Verde", "Cafe", "Gris", "Amarillo");
   $colorLength = count($color);
   $colorText = "";
   for($i=0; $i<$colorLength; $i++){
 		$colorText = $colorText."<color>".$color[$i]."</color>";	
-  }
+  }*/
 
   //$likeLink = "http://caminohn.com";
   
   $content = "<shoes>";
   
   while($row = mysql_fetch_assoc($result)){
-		//$idShoe = $row["idshoe"];
+		$idShoe = $row["idshoe"];
 		$organization = $row["organization"];
 		$description = $row["description"];
 		$thumbnail = $row["thumbnail"];
@@ -60,6 +60,21 @@
 		$style = $row["style"];
 		$price = $row["price"];
 		$likeLink = $row["likeLink"];
+		
+		$query = "SELECT size.size FROM size AS size, shoesize AS shoesize WHERE shoesize.idshoe = $idShoe AND shoesize.idsize= size.idsize";
+		$sizes = mysql_query($query) or die('Consulta fallida: ' . mysql_error());
+		$sizeText = "";
+		while($size = mysql_fetch_assoc($sizes)){
+			$sizeText = $sizeText."<size>".$size["size"]."</size>";
+		}
+		
+		$query = "SELECT color.name FROM color AS color, shoecolor AS shoecolor WHERE shoecolor.idshoe = $idShoe AND shoecolor.idcolor = color.idcolor";
+		$colors = mysql_query($query) or die('Consulta fallida: ' . mysql_error());
+		$colorText = "";
+		while($color = mysql_fetch_assoc($colors)){
+			$colorText = $colorText."<color>".$color["name"]."</color>";
+		}
+		
 		
 		$content = $content."<shoe>
 		<organization>$organization</organization>
