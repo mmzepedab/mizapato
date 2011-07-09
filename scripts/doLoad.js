@@ -158,7 +158,6 @@ function loadSponsor(){
 		if (xmlhttp.readyState==4 && xmlhttp.status==200)
 		{
 	x=xmlhttp.responseXML.documentElement.getElementsByTagName("shoe");
-	alert(x);
 	sponsor += "<div id='column3Inside'>\
 				<div id='column3Offer1'>\
 					<a id='organizationXButton' href='#' title='Mostrar otro' ></a>\
@@ -183,8 +182,7 @@ function loadSponsor(){
 		}
 	document.getElementById('column3').innerHTML  = sponsor;
 	}
-
-	xmlhttp.open("GET","http://localhost/shoe/scripts/xml.php",true);
+	xmlhttp.open("GET",_ROOT+"/scripts/xml.php",true);
 	xmlhttp.send();
 }
 

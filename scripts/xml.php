@@ -64,8 +64,13 @@
 		$query = "SELECT size.size FROM size AS size, shoesize AS shoesize WHERE shoesize.idshoe = $idShoe AND shoesize.idsize= size.idsize";
 		$sizes = mysql_query($query) or die('Consulta fallida: ' . mysql_error());
 		$sizeText = "";
-		while($size = mysql_fetch_assoc($sizes)){
-			$sizeText = $sizeText."<size>".$size["size"]."</size>";
+		$numRows = mysql_num_rows($sizes);
+		if($numRows > 0){
+			while($size = mysql_fetch_assoc($sizes)){
+				$sizeText = $sizeText."<size>".$size["size"]."</size>";
+			}
+		}else{
+			$sizeText = "<size>Ninguna</size>";
 		}
 		
 		$query = "SELECT color.name FROM color AS color, shoecolor AS shoecolor WHERE shoecolor.idshoe = $idShoe AND shoecolor.idcolor = color.idcolor";

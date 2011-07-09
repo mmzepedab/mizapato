@@ -3,7 +3,7 @@
 /***************************************************************************************************/
 
 function loadScript(){
-	var head= document.getElementsByTagName('head')(0);
+	var head= document.getElementsByTagName('head')[0];
 /***************************************************************************************************/
 /*			Cargar el script de doLoad.js y luego llamar el metodo load en index.php     		   */
 /***************************************************************************************************/

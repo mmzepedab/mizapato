@@ -8,7 +8,7 @@
 		<link rel='stylesheet' type='text/css' href='styles/reset.css'></link>
 		<link rel='stylesheet' type='text/css' href='styles/styles.css'></link>
 		<script type='text/javascript' src='scripts/loadScript.js'></script>	
-		<script type='text/javascript' src='scripts/constants.js'></script>			
+		<script type='text/javascript' src='scripts/constants.js'></script>
 	</head> 
 	
 	<body onload='loadScript();'>
